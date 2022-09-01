@@ -1,0 +1,28 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+    // Write C code here
+    int n,x,a,flag;
+    flag=0;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for(x=2;x<n;x++)
+    {
+        a=n%x;
+        if(a==0)
+        {
+            flag=1;
+        }
+    }
+    if(flag==0)
+    {
+        printf("it is prime");
+    }
+    else
+    {
+        printf("it is not a prime");
+    }
+    return 0;
+}

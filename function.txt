@@ -1,0 +1,31 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() 
+{
+    int a,b,result,res;
+    a=100;
+    b=230;
+    printf("enter the number");
+    result=add(a,b);
+    printf("%d\n",result);
+    
+    res=sub(a,b);
+    printf("%d\n",res);
+    
+    result=mult(a,b);
+    printf("%d",result);
+    return 0;
+}
+int add(int i,int j)
+{
+    return i+j;
+}
+int sub(int i,int j)
+{
+    return i>j ? i-j : j-i;
+}
+int mult(int i,int j)
+{
+    return i<j?j*i:i*j;
+}
